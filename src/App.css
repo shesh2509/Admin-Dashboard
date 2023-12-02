@@ -1,0 +1,144 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[name="name"] {
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  width: calc(100% - 140px); 
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+input[name="name"]:focus {
+  border-color: #0056b3;
+}
+
+.search-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon:hover {
+  color: #007bff;
+}
+
+.delete-selected-button {
+  color: #ff6666;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  input[name="name"] {
+    width: calc(100% - 100px); 
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+}
+
+.edit,
+.delete,
+.delete-selected-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.edit:hover {
+  color: #444444;
+}
+
+.delete:hover,
+.delete-selected-button:hover {
+  color: #ff6666;
+}
+
+.selected-row {
+  background-color: #e0e0e0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  color: #007bff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.jump-to-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.jump-to-page button {
+  cursor: pointer;
+  margin: 0 5px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.jump-to-page button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.jump-to-page span {
+  padding: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
